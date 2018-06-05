@@ -14,6 +14,7 @@
         <module>books.json.printer</module>
         <module>books.simpletext.printer</module>
         <module>main</module>
+        <module>books.xml.printer</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -31,7 +32,6 @@
                 <artifactId>jackson-databind</artifactId>
                 <version>2.9.5</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
@@ -44,6 +44,10 @@
                     <version>3.6.1</version>
                     <configuration>
                         <release>9</release>
+                        <compilerArgs>
+                            <argument>--add-opens</argument>
+                            <argument>java.base/java.lang=com.google.guice</argument>
+                        </compilerArgs>
                     </configuration>
                 </plugin>
             </plugins>
@@ -58,6 +62,8 @@
                     <arguments>
                         <argument>--module-path</argument>
                         <modulepath/>
+                        <argument>--add-opens</argument>
+                        <argument>java.base/java.lang=com.google.guice</argument>
                         <argument>--module</argument>
                         <argument>main/main.bookapp.BookApp</argument>
                     </arguments>

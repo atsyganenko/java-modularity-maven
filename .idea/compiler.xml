@@ -11,6 +11,7 @@
         <module name="books.printer.api" />
         <module name="books.simpletext.printer" />
         <module name="books.storage.api" />
+        <module name="books.xml.printer" />
         <module name="main" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="books.printer.api" target="9" />
       <module name="books.simpletext.printer" target="9" />
       <module name="books.storage.api" target="9" />
+      <module name="books.xml.printer" target="9" />
       <module name="java-modularity-maven" target="1.5" />
       <module name="javamodularitymaven" target="1.5" />
       <module name="main" target="9" />
