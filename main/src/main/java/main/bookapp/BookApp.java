@@ -6,8 +6,7 @@ import books.storage.api.entities.Book;
 import books.storage.api.service.BooksService;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-
-import java.util.ServiceLoader;
+import books.simpletext.printer.SimpleTextBookPrinter;
 
 public class BookApp {
 
@@ -20,10 +19,9 @@ public class BookApp {
 
         Book book = booksService.getBook(id);
 
-        ServiceLoader.load(BookPrinter.class).forEach(printer -> {
-            printer.printIntroductionMsg();
-            printer.printBook(book);
-        });
+        BookPrinter printer = new SimpleTextBookPrinter();
+        printer.printIntroductionMsg();
+        printer.printBook(book);
     }
 
 }

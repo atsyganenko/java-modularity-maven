@@ -44,6 +44,10 @@
                     <version>3.6.1</version>
                     <configuration>
                         <release>9</release>
+<!--                        <compilerArgs>
+                            <argument>&#45;&#45;add-opens</argument>
+                            <argument>java.base/java.lang=ALL-UNNAMED</argument>
+                        </compilerArgs>-->
                     </configuration>
                 </plugin>
             </plugins>
@@ -56,10 +60,12 @@
                 <configuration>
                     <executable>java</executable>
                     <arguments>
-                        <argument>--module-path</argument>
-                        <modulepath/>
-                        <argument>--module</argument>
-                        <argument>main/main.bookapp.BookApp</argument>
+                        <argument>-classpath
+                        </argument>
+                        <classpath/>
+<!--                        <argument>&#45;&#45;add-opens</argument>
+                        <argument>java.base/java.lang=ALL-UNNAMED</argument>-->
+                        <argument>main.bookapp.BookApp</argument>
                     </arguments>
                 </configuration>
             </plugin>
