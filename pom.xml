@@ -41,7 +41,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.6.1</version>
+                    <version>3.7.0</version>
                     <configuration>
                         <release>9</release>
                     </configuration>
@@ -58,6 +58,8 @@
                     <arguments>
                         <argument>--module-path</argument>
                         <modulepath/>
+                        <argument>--add-opens</argument>
+                        <argument>java.base/java.lang=com.google.guice</argument>
                         <argument>--module</argument>
                         <argument>main/main.bookapp.BookApp</argument>
                     </arguments>
