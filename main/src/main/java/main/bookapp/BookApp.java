@@ -12,7 +12,6 @@ import java.util.ServiceLoader;
 public class BookApp {
 
     public static void main(String args[]) {
-
         Injector injector = Guice.createInjector(new InMemoryStorageModule());
 
         BooksService booksService = injector.getInstance(BooksService.class);
@@ -25,7 +24,6 @@ public class BookApp {
             printer.printIntroductionMsg();
             printer.printBook(book);
         });
-
     }
 
 }

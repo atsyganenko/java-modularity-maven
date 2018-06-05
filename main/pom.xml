@@ -21,13 +21,21 @@
             <groupId>java.modularity</groupId>
             <artifactId>books.printer.api</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>java.modularity</groupId>
             <artifactId>books.inmemory.storage</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>java.modularity</groupId>
+            <artifactId>books.simpletext.printer</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>java.modularity</groupId>
+            <artifactId>books.json.printer</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <build>
@@ -42,5 +50,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
