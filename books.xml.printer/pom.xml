@@ -35,10 +35,10 @@
                 <configuration>
                     <source>9</source>
                     <target>9</target>
-                    <compilerArgs>
-                        <argument>--upgrade-module-path</argument>
-                        <argument>/Users/a.tsyganenko/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar</argument>
-                    </compilerArgs>
+                    <!--<compilerArgs>
+                        <argument>&#45;&#45;upgrade-module-path</argument>
+                        <argument>${javax.xml.bind:jaxb-api:jar}</argument>
+                    </compilerArgs>-->
                 </configuration>
             </plugin>
         </plugins>
