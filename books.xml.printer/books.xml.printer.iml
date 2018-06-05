@@ -13,5 +13,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: java.modularity:books.printer.api:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: java.modularity:books-storage-api:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
   </component>
 </module>
